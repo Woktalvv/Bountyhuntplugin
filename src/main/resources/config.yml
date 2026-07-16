@@ -1,0 +1,31 @@
+# Preparation time in seconds (default: 15 minutes = 900 seconds)
+prep-time: 900
+
+# Hunt time multiplier (hunt time = distance * multiplier)
+hunt-time-multiplier: 0.1
+
+# Death penalty: if true, the hunter dies if they fail
+death-penalty: true
+
+# Loot reward: if true, the hunter gets the target's loot
+loot-reward: true
+
+# BossBar settings
+bossbar:
+  color: RED
+  style: SEGMENTED_10
+  title: "Distance to Target: {distance}m"
+
+# Messages (use & for color codes, e.g., &a = green, &c = red)
+messages:
+  hunt-started: "&aYou have started a bounty hunt! The target has been notified and has {prepTime} minutes to prepare."
+  hunt-cancelled: "&cBounty hunt cancelled."
+  target-notified: "&cYou are being hunted by {hunter}! You have {prepTime} minutes to prepare."
+  hunt-time-up: "&aThe preparation time is up! Hunt your target now."
+  hunter-won: "&aYou killed your target! You received their loot."
+  hunter-failed: "&cYou failed to kill your target in time. You have been punished."
+  target-killed: "&cYou were killed by your hunter!"
+  no-active-hunts: "&cNo active bounty hunts."
+  not-enough-players: "&cThere are not enough online players to start a bounty hunt."
+  already-hunting: "&cYou are already in a bounty hunt."
+  not-hunting: "&cYou are not in a bounty hunt."
