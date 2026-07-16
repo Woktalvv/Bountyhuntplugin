@@ -1,0 +1,20 @@
+name: BountyHunt
+version: 1.0
+main: me.woktalvv.bountyhunt.BountyHuntPlugin
+api-version: "1.26"
+authors: [Woktalvv]
+description: A bounty hunting plugin with prep time, distance tracking, and random targets.
+commands:
+  bounty:
+    description: Start, cancel, or list bounty hunts.
+    usage: /bounty start|cancel|list
+    permission: bounty.use
+    permission-message: You do not have permission to use this command!
+
+permissions:
+  bounty.use:
+    description: Allows players to use bounty commands.
+    default: true
+  bounty.admin:
+    description: Allows access to admin features.
+    default: op
