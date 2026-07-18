@@ -15,9 +15,18 @@
     </properties>
 
     <repositories>
+        <!-- PaperMC Repository (for releases) -->
         <repository>
             <id>papermc-repo</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
+        </repository>
+        <!-- PaperMC Snapshot Repository (for SNAPSHOT builds like 1.26.2) -->
+        <repository>
+            <id>papermc-snapshots</id>
+            <url>https://repo.papermc.io/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
 
